@@ -1,0 +1,272 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="components/loader.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+Opti&display=swap" rel="stylesheet">
+    <script>
+        //
+        // TODO: Write JavaScript code here
+        //
+    </script>
+</head>
+<body>
+    <div class="all">
+        <!--ヘッダー-->
+        <header>
+	        <h1>時間割</h1>
+        </header>
+        <!--メイン-->
+        <main>
+            <!--学年学期・追加ボタン-->
+            <div class="ti-1">
+                <div class="pulldown-t">
+                    <form>
+                        <label>
+                            <select>
+                                <option value="test1">1年前期</option>
+                                <option value="test2">1年後期</option>
+                                <option value="test3">2年前期</option>
+                                <option value="test4">2年後期</option>
+                                <option value="test4">3年前期</option>
+                                <option value="test4">3年後期</option>
+                                <option value="test4">4年前期</option>
+                                <option value="test4">4年後期</option>
+                            </select>
+                        </label>
+                    </form>
+                </div>
+                <div class="icon">
+                    <p><img src="add.png" alt="追加"></p>
+                    <p>時間割追加</p>
+                </div>
+            </div>
+            <!--時間割表-->
+            <div class="ti-2">
+                <table>
+                    <tr class="day">
+                        <th class="none"></th>
+                        <th class="span3">月</th>
+                        <th class="span3">火</th>
+                        <th class="span3">水</th>
+                        <th class="span3">木</th>
+                        <th class="span3">金</th>
+                    </tr>
+                    <tr>
+                        <th class="hour"><span class="span2">9:00</span><br><span class="span3">1</span><br><span class="span2">10:30</span></th>
+                        <td class="td-1">
+                            <div class="ti-2-1">
+                                <div class="ti-2-1-t">
+                                    <p>数学概論</p>
+                                </div>
+                                <div class="ti-2-1-p">
+                                    <p>田中凛</p>
+                                    <p>1201</p>
+                                </div>
+                                <div class="ti-2-1-i">
+                                    <div class="icon3">
+                                        <p><img src="delete.png" alt="削除"></p>
+                                        <p>削除</p>
+                                    </div>
+                                    <div class="icon4">
+                                        <p><img src="edit.png" alt="編集"></p>
+                                        <p>編集</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th class="hour"><span class="span2">10:55</span><br><span class="span3">2</span><br><span class="span2">12:25</span></th>
+                        <td></td>
+                        <td></td>
+                        <td class="td-2">
+                            <div class="ti-2-2">
+                                <div class="ti-2-2-t">
+                                    <p>心理学概論</p>
+                                </div>
+                                <div class="ti-2-2-p">
+                                    <p>佐藤蒼</p>
+                                    <p>9001</p>
+                                </div>
+                                <div class="ti-2-2-i">
+                                    <div class="icon3">
+                                        <p><img src="delete.png" alt="削除"></p>
+                                        <p>削除</p>
+                                    </div>
+                                    <div class="icon4">
+                                        <p><img src="edit.png" alt="編集"></p>
+                                        <p>編集</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th class="hour"><span class="span2">13:15</span><br><span class="span3">3</span><br><span class="span2">14:45</span></th>
+                        <td></td>
+                        <td class="td-3">
+                            <div class="ti-2-3">
+                                <div class="ti-2-3-t">
+                                    <p>英語概論</p>
+                                </div>
+                                <div class="ti-2-3-p">
+                                    <p>髙橋樹</p>
+                                    <p>8002</p>
+                                </div>
+                                <div class="ti-2-3-i">
+                                    <div class="icon3">
+                                        <p><img src="delete.png" alt="削除"></p>
+                                        <p>削除</p>
+                                    </div>
+                                    <div class="icon4">
+                                        <p><img src="edit.png" alt="編集"></p>
+                                        <p>編集</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th class="hour"><span class="span2">14:55</span><br><span class="span3">4</span><br><span class="span2">16:25</span></th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="td-4">
+                            <div class="ti-2-4">
+                                <div class="ti-2-4-t">
+                                    <p>経済学概論</p>
+                                </div>
+                                <div class="ti-2-4-p">
+                                    <p>渡辺結菜</p>
+                                    <p>6402</p>
+                                </div>
+                                <div class="ti-2-4-i">
+                                    <div class="icon3">
+                                        <p><img src="delete.png" alt="削除"></p>
+                                        <p>削除</p>
+                                    </div>
+                                    <div class="icon4">
+                                        <p><img src="edit.png" alt="編集"></p>
+                                        <p>編集</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="hour"><span class="span2">16:35</span><br><span class="span3">5</span><br><span class="span2">18:05</span></th>
+                        <td class="td-5">
+                            <div class="ti-2-5">
+                                <div class="ti-2-5-t">
+                                    <p>歴史学概論</p>
+                                </div>
+                                <div class="ti-2-5-p">
+                                    <p>山本詩</p>
+                                    <p>1306</p>
+                                </div>
+                                <div class="ti-2-5-i">
+                                    <div class="icon3">
+                                        <p><img src="delete.png" alt="削除"></p>
+                                        <p>削除</p>
+                                    </div>
+                                    <div class="icon4">
+                                        <p><img src="edit.png" alt="編集"></p>
+                                        <p>編集</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="td-6">
+                            <div class="ti-2-6">
+                                <div class="ti-2-6-t">
+                                    <p>哲学概論</p>
+                                </div>
+                                <div class="ti-2-6-p">
+                                    <p>鈴木陽葵</p>
+                                    <p>9013</p>
+                                </div>
+                                <div class="ti-2-6-i">
+                                    <div class="icon3">
+                                        <p><img src="delete.png" alt="削除"></p>
+                                        <p>削除</p>
+                                    </div>
+                                    <div class="icon4">
+                                        <p><img src="edit.png" alt="編集"></p>
+                                        <p>編集</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td></td>
+                        <td class="td-7">
+                            <div class="ti-2-7">
+                                <div class="ti-2-7-t">
+                                    <p>社会学概論</p>
+                                </div>
+                                <div class="ti-2-7-p">
+                                    <p>伊藤蓮</p>
+                                    <p>7402</p>
+                                </div>
+                                <div class="ti-2-7-i">
+                                    <div class="icon3">
+                                        <p><img src="delete.png" alt="削除"></p>
+                                        <p>削除</p>
+                                    </div>
+                                    <div class="icon4">
+                                        <p><img src="edit.png" alt="編集"></p>
+                                        <p>編集</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+        </main>
+        <!--フッター-->
+        <footer>
+            <div class="footer">
+                <div class="f-1">
+                    <a href="todo.html">
+                        <p><img src="todo2.png" alt="TODO"></p>
+                        <p class="gray">TODOリスト</p>
+                    </a>
+                </div>
+                <div class="f-2">
+                    <p><img src="timeTable1.png" alt="時間割"></p>
+                    <p>時間割表</p>
+                </div>
+                <div class="f-3">
+                    <a href="calender.html">
+                        <p><img src="calender2.png" alt="カレンダー"></p>
+                        <p class="gray">カレンダー</p>
+                    </a>
+                </div>
+                <div class="f-4">
+                    <a href="myPage.html">
+                        <p><img src="myPage2.png" alt="マイページ"></p>
+                        <p class="gray">マイページ</p>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
