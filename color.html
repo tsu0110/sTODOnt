@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="components/loader.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+Opti&display=swap" rel="stylesheet">
+    <script>
+        function changePageBgColor (newColor) {
+            document.body.style.backgroundColor=newColor;
+        }
+
+        function changeUnderline (idname) {
+            let obj=document.getElementById(idname);
+            if (obj.style.textDecoration=="underline") {
+                obj.style.textDecoration="none";
+            } else {
+                obj.style.textDecoration="underline";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="all">
+        <!--ヘッダー-->
+        <header>
+	        <h1>マイページ</h1>
+        </header>
+        <!--メイン-->
+        <main>
+            <!--パンくず・タイトル-->
+            <div class="co-1">
+                <a href="myPage.html"><p class="no-under">＜ マイページのTOPへ</p></a>
+                <h2>テーマカラー変更</h2>
+            </div>
+            <!--色見本-->
+            <div class="co-2">
+                <div class="co-2-1">
+                    <div class="red">
+                        <p class="circle1" onclick="changePageBgColor('#E0BFBF'); changeUnderline('r')"></p>
+                        <p id="r">Red</p>
+                    </div>
+                    <div class="orange">
+                        <p class="circle2" onclick="changePageBgColor('#E0D7BF'); changeUnderline('o')"></p>
+                        <p id="o">Orange</p>
+                    </div>
+                    <div class="yellow">
+                        <p class="circle3" onclick="changePageBgColor('#E0E0BF'); changeUnderline('y')"></p>
+                        <p id="y">Yellow</p>
+                    </div>
+                </div>
+                <div class="co-2-2">
+                    <div class="green">
+                        <p class="circle4" onclick="changePageBgColor('#C6E0BF'); changeUnderline('g')"></p>
+                        <p id="g">Green</p>
+                    </div>
+                    <div class="aqua">
+                        <p class="circle5" onclick="changePageBgColor('#BFE0DF'); changeUnderline('a')"></p>
+                        <p id="a">Aqua</p>
+                    </div>
+                    <div class="blue">
+                        <p class="circle6" onclick="changePageBgColor('#BFCDE0'); changeUnderline('b')"></p>
+                        <p id="b">Blue</p>
+                    </div>
+                </div>
+                <div class="co-2-3">
+                    <div class="purple">
+                        <p class="circle7" onclick="changePageBgColor('#CEBFE0'); changeUnderline('pu')"></p>
+                        <p id="pu">Purple</p>
+                    </div>
+                    <div class="pink">
+                        <p class="circle8" onclick="changePageBgColor('#E0BFDD'); changeUnderline('pi')"></p>
+                        <p id="pi">Pink</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!--フッター-->
+        <footer>
+            <div class="footer">
+                <div class="f-1">
+                    <a href="todo.html">
+                        <p><img src="todo2.png" alt="TODO"></p>
+                        <p class="gray">TODOリスト</p>
+                    </a>
+                </div>
+                <div class="f-2">
+                    <a href="timeTable.html">
+                        <p><img src="timeTable2.png" alt="時間割"></p>
+                        <p class="gray">時間割表</p>
+                    </a>
+                </div>
+                <div class="f-3">
+                    <a href="calender.html">
+                        <p><img src="calender2.png" alt="カレンダー"></p>
+                        <p class="gray">カレンダー</p>
+                    </a>
+                </div>
+                <div class="f-4">
+                    <p><img src="myPage1.png" alt="マイページ"></p>
+                    <p>マイページ</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
