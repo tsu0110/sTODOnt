@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="components/loader.js"></script>
+    <script src="java/style.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+Opti&display=swap" rel="stylesheet">
+    <script>
+        //
+        // TODO: Write JavaScript code here
+        //
+    </script>
+</head>
+<body>
+    <div class="all">
+        <!--ヘッダー-->
+        <header>
+	        <h1>マイページ</h1>
+        </header>
+        <!--メイン-->
+        <main>
+            <!--パンくず・タイトル-->
+            <div class="u-1">
+                <a href="myPage.html"><p class="no-under">＜ マイページのTOPへ</p></a>
+                <h2>ユーザー情報変更</h2>
+            </div>
+            <!--変更内容-->
+            <div class="u-2">
+                <hr>
+                <a href="namePass.html"><p class="under">ユーザー名・パスワード変更</p></a>
+                <hr>
+                <p class="under">通知設定</p>
+                <hr>
+                <p class="under" onclick="logout()">ログアウト</p>
+                <hr>
+                <p class="under">データ削除</p>
+                <hr>
+            </div>
+        </main>
+        <!--フッター-->
+        <footer>
+            <div class="footer">
+                <div class="f-1">
+                    <a href="todo.html">
+                        <p><img src="todo2.png" alt="TODO"></p>
+                        <p class="gray">TODOリスト</p>
+                    </a>
+                </div>
+                <div class="f-2">
+                    <a href="timeTable.html">
+                        <p><img src="timeTable2.png" alt="時間割"></p>
+                        <p class="gray">時間割表</p>
+                    </a>
+                </div>
+                <div class="f-3">
+                    <a href="calender.html">
+                        <p><img src="calender2.png" alt="カレンダー"></p>
+                        <p class="gray">カレンダー</p>
+                    </a>
+                </div>
+                <div class="f-4">
+                    <p><img src="myPage1.png" alt="マイページ"></p>
+                    <p>マイページ</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
