@@ -1,0 +1,185 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="components/loader.js"></script>
+    <script src="java/style.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+Opti&display=swap" rel="stylesheet">
+    <script>
+        //
+        // TODO: Write JavaScript code here
+        //
+    </script>
+</head>
+<body>
+    <div class="all">
+        <!--ヘッダー-->
+        <header>
+	        <h1>TODOリスト</h1>
+        </header>
+        <!--メイン-->
+        <main>
+            <!--件数・追加ボタン-->
+            <div class="to-1">
+                <div class="to-1-1">
+                    <p class="marzero">1〜5件表示（全20件）</p>
+                    <div class="icon_m">
+                        <p><img src="delete.png" alt="削除"></p>
+                        <p>一括削除</p>
+                    </div>
+                    <div class="icon">
+                        <p><img src="add.png" alt="追加"></p>
+                        <p>TODO追加</p>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <!--TODO内容-->
+            <div class="to-2">
+                <div class="to-2-1">
+                    <div class="to-2-1-1">
+                        <p class="checkBox"></p>
+                        <div class="to-contents">
+                            <p class="todoCont">月4コメントシート</p>
+                            <p class="todoTime">04/13(火) 19:00</p>
+                        </div>
+                    </div>
+                    <div class="to-2-1-2">
+                        <div class="icon1">
+                            <p><img src="delete.png" alt="削除" onClick="del()"></p>
+                            <p>削除</p>
+                        </div>
+                        <div class="icon2">
+                            <p><img src="edit.png" alt="編集"></p>
+                            <p>編集</p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="to-2-2">
+                    <div class="to-2-2-1">
+                        <p class="checkBox"></p>
+                        <div class="to-contents">
+                            <p class="todoCont">火1コメントシート</p>
+                            <p class="todoTime">04/14(水) 10:30</p>
+                        </div>
+                    </div>
+                    <div class="to-2-2-2">
+                        <div class="icon1">
+                            <p><img src="delete.png" alt="削除"></p>
+                            <p>削除</p>
+                        </div>
+                        <div class="icon2">
+                            <p><img src="edit.png" alt="編集"></p>
+                            <p>編集</p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="to-2-3">
+                    <div class="to-2-3-1">
+                        <p class="checkBox"></p>
+                        <div class="to-contents">
+                            <p class="todoCont">水2コメントシート</p>
+                            <p class="todoTime">04/15(木) 14:00</p>
+                        </div>
+                    </div>
+                    <div class="to-2-3-2">
+                        <div class="icon1">
+                            <p><img src="delete.png" alt="削除"></p>
+                            <p>削除</p>
+                        </div>
+                        <div class="icon2">
+                            <p><img src="edit.png" alt="編集"></p>
+                            <p>編集</p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="to-2-4">
+                    <div class="to-2-4-1">
+                        <p class="checkBox"></p>
+                        <div class="to-contents">
+                            <p class="todoCont">木4コメントシート</p>
+                            <p class="todoTime">04/16(金) 9:30</p>
+                        </div>
+                    </div>
+                    <div class="to-2-4-2">
+                        <div class="icon1">
+                            <p><img src="delete.png" alt="削除"></p>
+                            <p>削除</p>
+                        </div>
+                        <div class="icon2">
+                            <p><img src="edit.png" alt="編集"></p>
+                            <p>編集</p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="to-2-5">
+                    <div class="to-2-5-1">
+                        <p class="checkBox"></p>
+                        <div class="to-contents">
+                            <p class="todoCont">金2コメントシート</p>
+                            <p class="todoTime">04/17(土) 23:59</p>
+                        </div>
+                    </div>
+                    <div class="to-2-5-2">
+                        <div class="icon1">
+                            <p><img src="delete.png" alt="削除"></p>
+                            <p>削除</p>
+                        </div>
+                        <div class="icon2">
+                            <p><img src="edit.png" alt="編集"></p>
+                            <p>編集</p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <!--ページ移動ボタン-->
+            <div class="to-3">
+                <p class="to-3-t"><img src="back2.png" alt="もっと前のページへ"></p>
+                <p class="to-3-t"><img src="back1.png" alt="1ページ前へ"></p>
+                <p class="to-3-n">1</p>
+                <p class="to-3-n">2</p>
+                <p class="to-3-n">3</p>
+                <p class="to-3-t"><img src="skip1.png" alt="1ページ次へ"></p>
+                <p class="to-3-t"><img src="skip2.png" alt="もっと次のページへ"></p>
+            </div>
+        </main>
+        <!--フッター-->
+        <footer>
+            <div class="footer">
+                <div class="f-1">
+                    <p><img src="todo1.png" alt="TODO"></p>
+                    <p>TODOリスト</p>
+                </div>
+                <div class="f-2">
+                    <a href="timeTable.html">
+                        <p><img src="timeTable2.png" alt="時間割"></p>
+                        <p class="gray">時間割表</p>
+                    </a>
+                </div>
+                <div class="f-3">
+                    <a href="calender.html">
+                        <p><img src="calender2.png" alt="カレンダー"></p>
+                        <p class="gray">カレンダー</p>
+                    </a>
+                </div>
+                <div class="f-4">
+                    <a href="myPage.html">
+                        <p><img src="myPage2.png" alt="マイページ"></p>
+                        <p class="gray">マイページ</p>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
